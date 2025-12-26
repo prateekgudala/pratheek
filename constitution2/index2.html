@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Show and Hide</title>
+<style>
+#box{
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    padding: 10px;
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<button onclick="toggleBox()">Show / Hide</button>
+
+<div id="box">
+    This is a content block
+</div>
+
+<script>
+function toggleBox(){
+    var box = document.getElementById("box");
+
+    if(box.style.display === "none"){
+        box.style.display = "block";
+    } else {
+        box.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
